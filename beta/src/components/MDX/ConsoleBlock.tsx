@@ -68,7 +68,9 @@ function ConsoleBlock({level = 'info', children}: ConsoleBlockProps) {
           }
         )}>
         {level === 'error' && <IconError className="self-start mt-1.5" />}
-        {level === 'warning' && <IconWarning className="self-start mt-1" />}
+        {level === 'warning' && (
+          <IconWarning className="self-start mt-1 ml-1" />
+        )}
         <div className="px-3">{message}</div>
       </div>
     </div>
